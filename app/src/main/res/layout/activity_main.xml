@@ -5,21 +5,32 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_mov"
+    android:background="#140021"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/buzzflix"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/img" />
+        android:text="BuzzFlix"
+        android:layout_centerVertical="true"
+        android:textSize="40dp"
+        android:textColor="#A08EB9"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/buzzflix"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/moviesapp"/>
+
 
     <TextView
         android:id="@+id/load"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/img"
+        android:layout_below="@id/buzzflix"
         android:layout_centerHorizontal="true"
         android:text="Loading..."
         android:textSize="25dp"
@@ -29,8 +40,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/load"
-        android:indeterminate="true"
-        android:outlineSpotShadowColor="@color/black"
-        />
+        android:indeterminate="true" />
 
 </RelativeLayout>

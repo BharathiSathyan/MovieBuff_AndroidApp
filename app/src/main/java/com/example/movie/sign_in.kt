@@ -26,5 +26,12 @@ class sign_in : AppCompatActivity() {
             val buttonSignup = Intent(this, signup::class.java)
             startActivity(buttonSignup)
         }
+
+        val homeb : AppCompatButton = findViewById<AppCompatButton>(R.id.button)
+        homeb.setOnClickListener{
+            val buttonhome = Intent(this, Homepage1::class.java)
+            startActivity(buttonhome)
+        }
+
     }
 }
